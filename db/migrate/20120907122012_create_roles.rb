@@ -6,6 +6,8 @@ class CreateRoles < ActiveRecord::Migration
 
       t.timestamps
     end
+    Role.create(:name => "Creator", :description => "Role assigned when user creates a task!")
+    Role.create(:name => "Updater", :description => "Role assigned when user updates a task!")
   end
 
   def self.down
