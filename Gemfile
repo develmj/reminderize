@@ -8,6 +8,8 @@ gem 'rails', '3.0.7'
 gem 'mysql2', '< 0.3'
 
 gem "twitter-bootstrap-rails"
+gem 'devise', '1.3.4'
+gem 'google_calendar'
 
 # Use unicorn as the web server
 # gem 'unicorn'

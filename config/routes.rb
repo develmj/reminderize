@@ -1,4 +1,10 @@
 Reminderize::Application.routes.draw do
+  devise_for :users
+
+  resources :roles
+
+  resources :task_groups
+
   resources :tasks
 
   # The priority is based upon order of creation:
