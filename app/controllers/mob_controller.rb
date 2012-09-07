@@ -1,6 +1,6 @@
 class MobController < ApplicationController
   
-  def process
+  def processed
   end
 
 end
