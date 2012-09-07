@@ -1,4 +1,6 @@
 Reminderize::Application.routes.draw do
+  get "mob/process"
+
   resources :task_lists
 
   devise_for :users
