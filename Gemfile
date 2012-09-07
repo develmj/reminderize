@@ -7,7 +7,9 @@ gem 'rails', '3.0.7'
 
 gem 'mysql2', '< 0.3'
 
+# https://github.com/seyhunak/twitter-bootstrap-rails
 gem "twitter-bootstrap-rails"
+# Devise for authentication
 gem 'devise', '1.3.4'
 gem 'google_calendar'
 
