@@ -46,4 +46,10 @@ Reminderize::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  services = JSON.parse(ENV['VCAP_SERVICES'])
+  mysql_key = services.keys.select { |svc| svc =~ /mysql/i }.first
+  mysql = services[mysql_key].first['credentials']
+  mysql_conf = {:host => mysql['hostname'], :port => mysql['port'],:username => mysql['user'], :password => mysql['password']}
+  @@client = Mysql2::Client.new mysql_conf
+
 end
