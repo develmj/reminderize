@@ -1,0 +1,16 @@
+--- 
+applications: 
+  .: 
+    framework: 
+      name: rails3
+      info: 
+        description: Rails Application
+        exec: 
+        mem: 256M
+    url: ${name}.${target-base}
+    name: reminderize
+    services: 
+      mysql-4b35a: 
+        type: mysql
+    instances: 1
+    mem: 1G
