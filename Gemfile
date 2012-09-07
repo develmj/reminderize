@@ -7,16 +7,16 @@ gem 'rails', '3.0.7'
 
 # Production
 gem 'mysql2', '< 0.3'
+gem 'json'
 
 # Development
-gem 'sqlite3'
+# gem 'sqlite3'
 
 # https://github.com/seyhunak/twitter-bootstrap-rails
-gem "twitter-bootstrap-rails"
+# gem "twitter-bootstrap-rails"
 # Devise for authentication
 gem 'devise', '1.3.4'
-gem 'google_calendar'
-
+gem 'twitter-bootstrap-rails'
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -29,8 +29,8 @@ gem 'google_calendar'
 
 # Bundle the extra gems:
 # gem 'bj'
-# gem 'nokogiri'
-gem 'sqlite3-ruby', :require => 'sqlite3'
+# gem 'nokogiri', '<1.5.5'
+# gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
 # Bundle gems for the local environment. Make sure to
