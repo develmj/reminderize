@@ -10,4 +10,5 @@ class User < ActiveRecord::Base
   has_many :task_groups
   has_many :tasks, :through => :task_groups
   has_many :roles, :through => :task_groups
+  has_many :task_lists, :through => :tasks
 end
