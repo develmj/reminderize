@@ -1,4 +1,6 @@
 Reminderize::Application.routes.draw do
+  resources :reminders
+
   get "mob/process"
 
   resources :task_lists
