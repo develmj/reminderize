@@ -1,0 +1,1 @@
+One user has many tasks through task_groups, one task_list will have many tasks, one user has many tasks through task_groups, and user has one role per task.
