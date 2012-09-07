@@ -5,7 +5,11 @@ gem 'rails', '3.0.7'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+# Production
 gem 'mysql2', '< 0.3'
+
+# Development
+gem 'sqlite3'
 
 # https://github.com/seyhunak/twitter-bootstrap-rails
 gem "twitter-bootstrap-rails"
